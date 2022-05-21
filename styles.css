@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+div form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: blanchedalmond;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+
+input, select {
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+form > button {
+    display: flex;
+    margin: 15px 0 5px 0;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.img > button {
+    margin: 20px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+button > p {
+    margin-left: 5px;
+    text-transform: uppercase;
+} 
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    padding: 20px;
+    font-size: 1.9rem;
+    font-weight: 300;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: blanchedalmond;
+    padding: 50px;
+    min-width: 300px;
+    justify-content: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+    min-height: 200px;
+    align-items: center;
+}
