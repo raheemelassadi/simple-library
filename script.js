@@ -11,6 +11,7 @@ const getTitle = document.getElementById('title');
 
 
 
+
 // constructor for making book
 function book(title, author, pages, read){
     this.title = title;
@@ -46,4 +47,10 @@ submitBtn.addEventListener('click', function(newBook){
     let newElem = document.createElement('li');
     newElem.innerHTML = `Title: ${newBook.title} </br> Author: ${newBook.author} </br> Pages: ${newBook.pages} </br> Read: ${newBook.read}`
     list.appendChild(newElem);
+})
+
+form.addEventListener('submit', function(event){
+    if (!getAuthor.validity.valid || !pages.validity.valid || !getTitle.validity.valid){
+        event.preventDefault()
+    }
 })
