@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class="form">
-        <form action="">
+        <form action="" >
             <label for="title">Title</label>
             <input type="text" name="title" id="title" required autofocus>
             <label for="author">Author</label>
             <input type="text" name="author" id="author" required>
             <label for="numOfPages">Number Of Pages</label>
-            <input type="number" name="numOfPages" id="numOfPages" step="100" required>
+            <input type="number" name="numOfPages" id="numOfPages" required minlength="0" maxlength="2000">
             <label for="read">Have you read it?</label>
             <select name="read" id="read" name="read" required>
                 <option value="read">Read</option>
                 <option value="not read">Not Read</option>
             </select>
-            <button type="button" id="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </div>
     <div class="main">
